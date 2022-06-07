@@ -16,7 +16,7 @@
   <widget class="QStackedWidget" name="stackedWidget">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>-10</x>
      <y>0</y>
      <width>521</width>
      <height>250</height>
@@ -272,6 +272,9 @@
        <height>25</height>
       </rect>
      </property>
+     <property name="placeholderText">
+      <string>Password</string>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_2">
      <property name="geometry">
@@ -281,6 +284,9 @@
        <width>113</width>
        <height>25</height>
       </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Password check</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_3">
@@ -292,6 +298,9 @@
        <height>25</height>
       </rect>
      </property>
+     <property name="placeholderText">
+      <string>Name</string>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_4">
      <property name="geometry">
@@ -302,6 +311,9 @@
        <height>25</height>
       </rect>
      </property>
+     <property name="placeholderText">
+      <string>ID</string>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_5">
      <property name="geometry">
@@ -311,6 +323,9 @@
        <width>113</width>
        <height>25</height>
       </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Phone</string>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton">
@@ -323,7 +338,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string>중복확인</string>
      </property>
     </widget>
    </widget>
