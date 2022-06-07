@@ -14,17 +14,17 @@ class WindowClass(QMainWindow, form_class):
         self.setupUi(self)
 
         # 버튼에 기능을 연결하는 코드
-        self.sellogin_s.clicked.connect(self.button1Function)
-        self.sellogin_t.clicked.connect(self.button2Function)
+        self.sellogin_s.clicked.connect(self.sellogin_s_click)
+        self.sellogin_t.clicked.connect(self.sellogin_t_click)
         self.stackedWidget.setCurrentIndex(0)
 
     # btn_1이 눌리면 작동할 함수
-    def button1Function(self):
-        print("btn_1 Clicked")
+    def sellogin_s_click(self):
+        self.stackedWidget.setCurrentIndex(2)
 
     # btn_2가 눌리면 작동할 함수
-    def button2Function(self):
-        print("btn_2 Clicked")
+    def sellogin_t_click(self):
+        self.stackedWidget.setCurrentIndex(1)
 
 
 if __name__ == "__main__":
