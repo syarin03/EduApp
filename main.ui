@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>521</width>
-    <height>250</height>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,21 +16,21 @@
   <widget class="QStackedWidget" name="stackedWidget">
    <property name="geometry">
     <rect>
-     <x>-10</x>
+     <x>0</x>
      <y>0</y>
      <width>521</width>
-     <height>250</height>
+     <height>500</height>
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>3</number>
    </property>
    <widget class="QWidget" name="login_main">
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
        <x>110</x>
-       <y>0</y>
+       <y>30</y>
        <width>300</width>
        <height>50</height>
       </rect>
@@ -47,39 +47,26 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QPushButton" name="sellogin_s">
+    <widget class="QPushButton" name="gotosignin">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>70</y>
+       <x>160</x>
+       <y>140</y>
        <width>200</width>
        <height>100</height>
       </rect>
      </property>
      <property name="text">
-      <string>LOGIN STUDENT</string>
+      <string>SIGN IN</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="sellogin_t">
+    <widget class="QPushButton" name="gotosignup">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>70</y>
+       <x>160</x>
+       <y>270</y>
        <width>200</width>
        <height>100</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>LOGIN TEACHER</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="signupbtn">
-     <property name="geometry">
-      <rect>
-       <x>190</x>
-       <y>200</y>
-       <width>141</width>
-       <height>31</height>
       </rect>
      </property>
      <property name="text">
@@ -87,87 +74,8 @@
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="login_teacher">
-    <widget class="QLineEdit" name="inputid_t">
-     <property name="geometry">
-      <rect>
-       <x>192</x>
-       <y>84</y>
-       <width>121</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="placeholderText">
-      <string>ID</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="inputpw_t">
-     <property name="geometry">
-      <rect>
-       <x>192</x>
-       <y>124</y>
-       <width>121</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="placeholderText">
-      <string>Password</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="fint_t">
-     <property name="geometry">
-      <rect>
-       <x>190</x>
-       <y>200</y>
-       <width>121</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="contextMenuPolicy">
-      <enum>Qt::DefaultContextMenu</enum>
-     </property>
-     <property name="toolTipDuration">
-      <number>0</number>
-     </property>
-     <property name="text">
-      <string>find id/pw</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="login_t">
-     <property name="geometry">
-      <rect>
-       <x>210</x>
-       <y>40</y>
-       <width>91</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>teacher login</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="logint_btn">
-     <property name="geometry">
-      <rect>
-       <x>190</x>
-       <y>160</y>
-       <width>121</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="contextMenuPolicy">
-      <enum>Qt::DefaultContextMenu</enum>
-     </property>
-     <property name="toolTipDuration">
-      <number>0</number>
-     </property>
-     <property name="text">
-      <string>find id/pw</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="login_student">
-    <widget class="QLabel" name="login_s">
+   <widget class="QWidget" name="signin">
+    <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
        <x>220</x>
@@ -183,11 +91,11 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLineEdit" name="inputpw_s">
+    <widget class="QLineEdit" name="inputpw">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>140</y>
+       <x>200</x>
+       <y>270</y>
        <width>113</width>
        <height>25</height>
       </rect>
@@ -196,11 +104,11 @@
       <string>Password</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="inputid_s">
+    <widget class="QLineEdit" name="inputid">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>100</y>
+       <x>200</x>
+       <y>230</y>
        <width>113</width>
        <height>25</height>
       </rect>
@@ -209,11 +117,11 @@
       <string>ID</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="find_s">
+    <widget class="QPushButton" name="findbtn">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>190</y>
+       <x>200</x>
+       <y>320</y>
        <width>89</width>
        <height>25</height>
       </rect>
@@ -222,13 +130,52 @@
       <string>find id/pw</string>
      </property>
     </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>120</y>
+       <width>171</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>112</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>학생</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>112</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>교사</string>
+      </property>
+     </widget>
+    </widget>
    </widget>
-   <widget class="QWidget" name="page">
+   <widget class="QWidget" name="signup">
     <widget class="QGroupBox" name="groupBox">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>30</y>
+       <x>40</x>
+       <y>190</y>
        <width>171</width>
        <height>81</height>
       </rect>
@@ -263,11 +210,11 @@
       </property>
      </widget>
     </widget>
-    <widget class="QLineEdit" name="lineEdit">
+    <widget class="QLineEdit" name="newpw">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>50</y>
+       <x>290</x>
+       <y>210</y>
        <width>113</width>
        <height>25</height>
       </rect>
@@ -276,11 +223,11 @@
       <string>Password</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_2">
+    <widget class="QLineEdit" name="newpwchk">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>80</y>
+       <x>290</x>
+       <y>240</y>
        <width>113</width>
        <height>25</height>
       </rect>
@@ -289,11 +236,11 @@
       <string>Password check</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_3">
+    <widget class="QLineEdit" name="newname">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>110</y>
+       <x>290</x>
+       <y>270</y>
        <width>113</width>
        <height>25</height>
       </rect>
@@ -302,11 +249,11 @@
       <string>Name</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_4">
+    <widget class="QLineEdit" name="newid">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>20</y>
+       <x>290</x>
+       <y>180</y>
        <width>113</width>
        <height>25</height>
       </rect>
@@ -315,11 +262,11 @@
       <string>ID</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_5">
+    <widget class="QLineEdit" name="newphone">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>140</y>
+       <x>290</x>
+       <y>300</y>
        <width>113</width>
        <height>25</height>
       </rect>
@@ -328,17 +275,71 @@
       <string>Phone</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="idchkbtn">
      <property name="geometry">
       <rect>
-       <x>400</x>
-       <y>20</y>
+       <x>410</x>
+       <y>180</y>
        <width>89</width>
        <height>25</height>
       </rect>
      </property>
      <property name="text">
       <string>중복확인</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>210</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>학습하기</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>210</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>문제풀기</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>240</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>상담하기</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>240</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>QnA</string>
      </property>
     </widget>
    </widget>
