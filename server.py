@@ -81,17 +81,16 @@ class MultiChatServer:
                 if ans in self.dic_A_list:
                     index = self.dic_A_list.index(ans)
                     if self.Q_dic[self.dic_Q_list[index]] == ans:
-                        client_socket.send('정답임'.encode())
+                        client_socket.send('[33]/정답임'.encode())
                         print('맞아서 보냇다')
                         # print("로그인에 성공하셨습니다")
                     else:
-                        client_socket.send('실패임'.encode())
+                        client_socket.send('[33]/실패임'.encode())
                         print('틀려서 보냇다.')
 
                 else:
-                    client_socket.send('실패임'.encode())
+                    client_socket.send('[33]/실패임'.encode())
                     print('틀려서 보냇다.')
-
 
 
             if self.cl_message =='문제풀기':
@@ -110,7 +109,7 @@ class MultiChatServer:
                     self.dic_A_list.append(self.all[i][1])
 
                 # print(self.Q_dic)
-                b=str(self.dic_Q_list[0:6])
+                b = '[22]/'+str(self.dic_Q_list[0:6])
                 print(b)
                 client_socket.send(b.encode())
                 print('보냄')
@@ -119,9 +118,9 @@ class MultiChatServer:
             #로그인                    self.user_pw.append(i[2]) 함수
             if self.cl_message.split('/')[0]=='login':
                 # cur.execute("SELECT * FROM usertbl")
-                a=eval(self.cl_message.split('/')[1])
-                inputid=a[1]
-                inputpw=a[2]
+                a = eval(self.cl_message.split('/')[1])
+                inputid = a[1]
+                inputpw = a[2]
                 # userlist = cur.fetchall()
                 # for i in userlist:
                 #     self.user_id.append(i[1])
@@ -130,27 +129,24 @@ class MultiChatServer:
                 if inputid in self.user_id:
                     self.id_index = self.user_id.index(inputid)
                     if self.user_pw[self.id_index] == inputpw:
-                        client_socket.send('성공'.encode())
+                        client_socket.send('[55]/성공'.encode())
                         # print("로그인에 성공하셨습니다")
 
                     else:
-                        client_socket.send('실패'.encode())
+                        client_socket.send('[55]/실패'.encode())
                         # print("로그인에 실패")
 
                 else:
-                    client_socket.send('아이디없음'.encode())
+                    client_socket.send('[55]/아이디없음'.encode())
                     # print("아이디없음")
-
-
-
 
 
             #만약 인덱스의 1번째가 //회원가입이면 회원가입 DB에 저장해라
             if self.cl_message.split('/')[0] == 'join':
-                a=eval(self.cl_message.split('/')[1])
-                inputid=a[1]
-                if inputid in self.user_id:
-                    client_socket.send('아이디중복'.encode())
+                a = eval(self.cl_message.split('/')[1])
+                input_id = a[1]
+                if input_id in self.user_id:
+                    client_socket.send('[44]/아이디중복'.encode())
                 else:
                     self.db_education = eval(self.cl_message.split('/')[1])
                     print(tuple(self.db_education))
@@ -161,8 +157,6 @@ class MultiChatServer:
                     conn.commit()
                     conn.close()
                     print('삽입완료')
-
-
 
 
             # 만약 인덱스의 1번째가 //학습진도이면 학습진도 DB에 저장해라
@@ -177,43 +171,29 @@ class MultiChatServer:
                 conn.commit()
                 conn.close()
 
-
-
             # 1대1 상담요청
             if self.cl_message.split('/')[0] == 'chat':
 
                 if self.cl_message.split('/')[1] == '채팅요청':
-                    # final_received_message = self.cl_message
-                    # print(1, final_received_message)
-                    # self.send_all_clients(client_socket, final_received_message)
                     for client in self.clients:
                         if client is not client_socket:
-                            client.send('채팅요청'.encode())
-                        #     client_socket.send(self.cl_message.encode())
+                            client.send('[11]/채팅요청'.encode())
 
                 elif self.cl_message.split('/')[1] == '채팅거부':
-                    # final_received_message = self.cl_message
-                    # print(1, final_received_message)
-                    # self.send_all_clients(client_socket, final_received_message)
                     for client in self.clients:
                         if client is not client_socket:
-                            client.send('채팅거부'.encode())
-                        # client_socket.send(self.cl_message.encode())
+                            client.send('[11]/채팅거부'.encode())
 
                 elif self.cl_message.split('/')[1] == '채팅수락':
-                    final_received_message = self.cl_message
-                    # print(1, final_received_message)
-                    # self.send_all_clients(client_socket, final_received_message)
                     for client in self.clients:
                         if client is not client_socket:
-                            client.send('채팅수락'.encode())
+                            client.send('[11]/채팅수락'.encode())
 
-                    # client_socket.send(self.cl_message.encode())
-                else:
-                    final_received_message = incoming_message.decode()
-                    print(1, final_received_message)
-                    self.send_all_clients(client_socket, final_received_message)
-                    print(33)
+            else:
+                final_received_message = incoming_message.decode()
+                print(1, final_received_message)
+                self.send_all_clients(client_socket, final_received_message)
+                print(33)
 
     # def chat(self,client_socket):
     #     while True:
