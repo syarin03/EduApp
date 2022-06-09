@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>521</width>
-    <height>250</height>
+    <width>900</width>
+    <height>700</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,19 +18,19 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>521</width>
-     <height>302</height>
+     <width>900</width>
+     <height>700</height>
     </rect>
    </property>
    <property name="currentIndex">
-    <number>3</number>
+    <number>5</number>
    </property>
    <widget class="QWidget" name="login_main">
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
        <x>110</x>
-       <y>0</y>
+       <y>30</y>
        <width>300</width>
        <height>50</height>
       </rect>
@@ -47,39 +47,26 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QPushButton" name="sellogin_s">
+    <widget class="QPushButton" name="gotosignin">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>70</y>
+       <x>160</x>
+       <y>140</y>
        <width>200</width>
        <height>100</height>
       </rect>
      </property>
      <property name="text">
-      <string>LOGIN STUDENT</string>
+      <string>SIGN IN</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="sellogin_t">
+    <widget class="QPushButton" name="gotosignup">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>70</y>
+       <x>160</x>
+       <y>270</y>
        <width>200</width>
        <height>100</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>LOGIN TEACHER</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="signupbtn">
-     <property name="geometry">
-      <rect>
-       <x>190</x>
-       <y>200</y>
-       <width>141</width>
-       <height>31</height>
       </rect>
      </property>
      <property name="text">
@@ -87,68 +74,8 @@
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="login_teacher">
-    <widget class="QLineEdit" name="inputid_t">
-     <property name="geometry">
-      <rect>
-       <x>200</x>
-       <y>110</y>
-       <width>113</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="placeholderText">
-      <string>ID</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="inputpw_t">
-     <property name="geometry">
-      <rect>
-       <x>200</x>
-       <y>150</y>
-       <width>113</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="placeholderText">
-      <string>Password</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="fint_t">
-     <property name="geometry">
-      <rect>
-       <x>200</x>
-       <y>200</y>
-       <width>121</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="contextMenuPolicy">
-      <enum>Qt::DefaultContextMenu</enum>
-     </property>
-     <property name="toolTipDuration">
-      <number>0</number>
-     </property>
-     <property name="text">
-      <string>find id/pw</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="login_t">
-     <property name="geometry">
-      <rect>
-       <x>210</x>
-       <y>40</y>
-       <width>91</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>teacher login</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="login_student">
-    <widget class="QLabel" name="login_s">
+   <widget class="QWidget" name="signin">
+    <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
        <x>220</x>
@@ -158,17 +85,17 @@
       </rect>
      </property>
      <property name="text">
-      <string>student login</string>
+      <string>sign in</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLineEdit" name="inputpw_s">
+    <widget class="QLineEdit" name="inputpw">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>140</y>
+       <x>200</x>
+       <y>270</y>
        <width>113</width>
        <height>25</height>
       </rect>
@@ -177,11 +104,11 @@
       <string>Password</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="inputid_s">
+    <widget class="QLineEdit" name="inputid">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>100</y>
+       <x>200</x>
+       <y>230</y>
        <width>113</width>
        <height>25</height>
       </rect>
@@ -190,11 +117,11 @@
       <string>ID</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="find_s">
+    <widget class="QPushButton" name="findbtn">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>190</y>
+       <x>200</x>
+       <y>380</y>
        <width>89</width>
        <height>25</height>
       </rect>
@@ -203,8 +130,372 @@
       <string>find id/pw</string>
      </property>
     </widget>
+    <widget class="QGroupBox" name="inchoose">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>120</y>
+       <width>171</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="inchoose_s">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>112</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>학생</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="inchoose_t">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>112</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>교사</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="signinbtn">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>330</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>sign in</string>
+     </property>
+    </widget>
    </widget>
-   <widget class="QWidget" name="page"/>
+   <widget class="QWidget" name="signup">
+    <widget class="QGroupBox" name="upchoose">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>190</y>
+       <width>171</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+     <widget class="QRadioButton" name="upchoose_s">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>112</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>학생</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="upchoose_t">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>112</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>교사</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLineEdit" name="newpw">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>210</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Password</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="newpwchk">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>240</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Password check</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="newname">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>270</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Name</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="newid">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>180</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>ID</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="newphone">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>300</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Phone</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="idchkbtn">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>180</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>중복확인</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="main">
+    <widget class="QPushButton" name="studybtn">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>210</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>학습하기</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="exambtn">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>210</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>문제풀기</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="chatbtn">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>240</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>상담하기</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="qnabtn">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>240</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>QnA</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page">
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>170</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="currentText">
+      <string>select chapter</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>select chapter</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Chapter 01</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Chapter 02</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>back</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>380</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>start</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>380</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>load</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>67</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>학습하기</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="sendquiz">
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>190</y>
+       <width>471</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>출제할 문제 입력</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>320</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>답 입력</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>back</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>460</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>출제하기</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tchrmain"/>
   </widget>
  </widget>
  <resources/>
