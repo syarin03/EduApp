@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>3</number>
+    <number>2</number>
    </property>
    <widget class="QWidget" name="login_main">
     <widget class="QLabel" name="label">
@@ -85,7 +85,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>student login</string>
+      <string>sign in</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -121,7 +121,7 @@
      <property name="geometry">
       <rect>
        <x>200</x>
-       <y>320</y>
+       <y>380</y>
        <width>89</width>
        <height>25</height>
       </rect>
@@ -130,7 +130,7 @@
       <string>find id/pw</string>
      </property>
     </widget>
-    <widget class="QGroupBox" name="groupBox_2">
+    <widget class="QGroupBox" name="inchoose">
      <property name="geometry">
       <rect>
        <x>180</x>
@@ -142,7 +142,7 @@
      <property name="title">
       <string/>
      </property>
-     <widget class="QRadioButton" name="radioButton_3">
+     <widget class="QRadioButton" name="inchoose_s">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -155,7 +155,7 @@
        <string>학생</string>
       </property>
      </widget>
-     <widget class="QRadioButton" name="radioButton_4">
+     <widget class="QRadioButton" name="inchoose_t">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -169,9 +169,22 @@
       </property>
      </widget>
     </widget>
+    <widget class="QPushButton" name="signinbtn">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>330</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>sign in</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="signup">
-    <widget class="QGroupBox" name="groupBox">
+    <widget class="QGroupBox" name="upchoose">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -183,7 +196,10 @@
      <property name="title">
       <string/>
      </property>
-     <widget class="QRadioButton" name="radioButton">
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+     <widget class="QRadioButton" name="upchoose_s">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -196,7 +212,7 @@
        <string>학생</string>
       </property>
      </widget>
-     <widget class="QRadioButton" name="radioButton_2">
+     <widget class="QRadioButton" name="upchoose_t">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -289,8 +305,8 @@
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="page_2">
-    <widget class="QPushButton" name="pushButton_2">
+   <widget class="QWidget" name="stumain">
+    <widget class="QPushButton" name="studybtn">
      <property name="geometry">
       <rect>
        <x>140</x>
@@ -303,7 +319,7 @@
       <string>학습하기</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="exambtn">
      <property name="geometry">
       <rect>
        <x>230</x>
@@ -316,7 +332,7 @@
       <string>문제풀기</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="chatbtn">
      <property name="geometry">
       <rect>
        <x>140</x>
@@ -329,7 +345,7 @@
       <string>상담하기</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QPushButton" name="qnabtn">
      <property name="geometry">
       <rect>
        <x>230</x>
