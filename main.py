@@ -10,15 +10,15 @@ class WindowClass(QMainWindow, form_class):
         super().__init__()
         self.setupUi(self)
 
-        self.sellogin_s.clicked.connect(self.sellogin_s_click)
-        self.sellogin_t.clicked.connect(self.sellogin_t_click)
+        self.gotosignin.clicked.connect(self.gotosignin_click)
+        self.gotosignup.clicked.connect(self.gotosignup_click)
         self.stackedWidget.setCurrentIndex(0)
 
-    def sellogin_s_click(self):
-        self.stackedWidget.setCurrentIndex(2)
-
-    def sellogin_t_click(self):
+    def gotosignin_click(self):
         self.stackedWidget.setCurrentIndex(1)
+
+    def gotosignup_click(self):
+        self.stackedWidget.setCurrentIndex(2)
 
 
 if __name__ == "__main__":
