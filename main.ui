@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>923</width>
-    <height>713</height>
+    <width>900</width>
+    <height>700</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,12 +18,12 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>871</width>
-     <height>711</height>
+     <width>900</width>
+     <height>700</height>
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>5</number>
    </property>
    <widget class="QWidget" name="login_main">
     <widget class="QLabel" name="label">
@@ -305,7 +305,7 @@
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="stumain">
+   <widget class="QWidget" name="main">
     <widget class="QPushButton" name="studybtn">
      <property name="geometry">
       <rect>
@@ -441,7 +441,61 @@
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="study"/>
+   <widget class="QWidget" name="sendquiz">
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>190</y>
+       <width>471</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>출제할 문제 입력</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>320</y>
+       <width>113</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>답 입력</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>back</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>460</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>출제하기</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tchrmain"/>
   </widget>
  </widget>
  <resources/>
