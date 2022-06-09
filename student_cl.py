@@ -34,10 +34,10 @@ class Mainwindow(QtWidgets.QMainWindow,QThread):
         self.Thread = Server_message()
         self.Thread.start()
         self.Thread.chat_request.connect(self.Server_recive)
-        self.Thread.server_question.connect(self.Question)
-        self.Thread.server_answer.connect(self.answer)
-        self.Thread.server_join.connect(self.join)
-        self.Thread.server_login.connect(self.login)
+        self.Thread.server_question.connect(self.Question_recv)
+        self.Thread.server_answer.connect(self.answer_recv)
+        self.Thread.server_join.connect(self.join_recv)
+        self.Thread.server_login.connect(self.login_recv)
         self.Thread.consulting.connect(self.consulting)
 
         self.dic_list=[]
@@ -56,8 +56,6 @@ class Mainwindow(QtWidgets.QMainWindow,QThread):
                 QMessageBox.question(self, 'Message', '채팅 연결완료.', QMessageBox.Yes)
                 self.chat()
 
-
-
     # 메세지 보여주기
     @pyqtSlot(str)
     def consulting(self, de_mge):
@@ -68,6 +66,7 @@ class Mainwindow(QtWidgets.QMainWindow,QThread):
     def Chat_ServerConnect(self):
         QMessageBox.question(self, 'Message', '채팅 연결중.. 잠시만 기다려주십시오.', QMessageBox.Yes)
         self.client_socket.send('chat/채팅요청'.encode())
+
 
     # 상담 내용
     def ServerConnect(self):
@@ -84,14 +83,13 @@ class Mainwindow(QtWidgets.QMainWindow,QThread):
 
     @pyqtSlot(str)
     def Question_recv(self, de_mge):
-        if de_mge.split('/')[1] == '문제풀기':
-            a = eval(de_mge)
-            print(type(a), a)
-            for i in a:
-                self.dic_list.append(i)
-            self.textBrowser_2.append(self.dic_list[0])
+        print('question')
+        # a = eval(de_mge)
+        # print(type(a), a)
+        # for i in de_mge:
+        #     self.dic_list.append(i)
+        self.textBrowser_2.append(de_mge)
             # self.label_9.setText(self.dic_list[0])
-
 
     def answer(self):
         a = '정답/'+self.lineEdit_7.text()
@@ -99,12 +97,12 @@ class Mainwindow(QtWidgets.QMainWindow,QThread):
 
     @pyqtSlot(str)
     def answer_recv(self, de_mge):
+        print('answer')
         if de_mge.split('/')[1] == '정답임':
             QMessageBox.question(self, '안내문', '정답', QMessageBox.Yes)
 
         elif de_mge.split('/')[1] == '실패임':
             QMessageBox.question(self, '안내문', '오답', QMessageBox.Yes)
-
 
     def join(self):
         join_info = ['학생', self.lineEdit.text() ,self.lineEdit_2.text(),self.lineEdit_3.text(), self.lineEdit_4.text()]
@@ -114,27 +112,27 @@ class Mainwindow(QtWidgets.QMainWindow,QThread):
 
     @pyqtSlot(str)
     def join_recv(self, de_mge):
+        print('join')
         if de_mge.split('/')[1] == '아이디중복':
             QMessageBox.question(self, '안내문', '중복된 아이디 입니다. ', QMessageBox.Yes)
-        else:
+        if de_mge.split('/')[1] == '회원가입완료':
             QMessageBox.question(self, '안내문', '회원가입 완료. ', QMessageBox.Yes)
 
-
     def login(self):
-        login_info=['학생', self.lineEdit_5.text() ,self.lineEdit_6.text()]
+        login_info = ['학생', self.lineEdit_5.text() ,self.lineEdit_6.text()]
         sql = 'login/'+str(login_info)
         self.client_socket.send(sql.encode())
         print('send', sql)
 
     @pyqtSlot(str)
     def login_recv(self, de_mge):
+        print('login')
         if de_mge.split('/')[1] == '성공':
             QMessageBox.question(self, '안내문', '로그인성공', QMessageBox.Yes)
         elif de_mge.split('/')[1] == '실패':
             QMessageBox.question(self, '안내문', '아이디와 비밀번호가 일치하지않습니다. 다시 입력해주세요. ', QMessageBox.Yes)
         else:
             QMessageBox.question(self, '안내문', '존재하지 않는 아이디 입니다. 다시 입력해주세요.', QMessageBox.Yes)
-
 
 class Server_message(QThread):
     chat_request = QtCore.pyqtSignal(str)
@@ -150,7 +148,7 @@ class Server_message(QThread):
     def run(self):
         while True:
             self.client_socket = main.client_socket
-            re_message = self.client_socket.recv(1024)
+            re_message = self.client_socket.recv(4096)
             de_mge = re_message.decode()
             print('쓰레드', de_mge)
 
@@ -174,8 +172,6 @@ class Server_message(QThread):
 
             else:
                 self.consulting.emit(de_mge)
-
-
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
