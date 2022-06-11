@@ -14,7 +14,7 @@ class MultiChatServer:
         self.dic_Q_list=[]
         self.all=[]
         self.chat=False
-        self.graph={'경영':0,'경제':0,'공공':0,'과학':0,'금융':0,'사회':0}
+        self.graph={'경영': 0, '경제': 0, '공공': 0, '과학': 0, '금융': 0, '사회': 0}
 
         # self.final_received_message = '' #최종 수신 메세지
         self.s_sock = socket(AF_INET, SOCK_STREAM)
@@ -60,10 +60,8 @@ class MultiChatServer:
 
     # 메세지 받기
     def received_message(self, client_socket):
-        sub_list=['경영','경제','공공','과학','금융','사회']
-        conn = sqlite3.connect("education")
+        sub_list = ['경영', '경제', '공공', '과학', '금융', '사회']
         print(self.user_id)
-        update=118
 
         while True:
             conn = sqlite3.connect("education")
@@ -73,7 +71,7 @@ class MultiChatServer:
             print(11,self.cl_message)
             if not self.cl_message:
                 break
-            if self.cl_message.split('/')[0] =='업데이트':
+            if self.cl_message.split('/')[0] == '업데이트':
                 teacher_update=eval(self.cl_message.split('/')[1])
                 print(teacher_update)
 

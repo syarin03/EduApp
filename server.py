@@ -68,7 +68,6 @@ class MultiChatServer:
             self.user_id.append(i[1])
             self.user_pw.append(i[2])
 
-
         while True:
             incoming_message = client_socket.recv(4096)
             self.cl_message = incoming_message.decode()

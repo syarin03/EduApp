@@ -13,10 +13,10 @@ class Mainwindow(QtWidgets.QMainWindow):
 
     def __init__(self):
         super(Mainwindow, self).__init__()
-        uic.loadUi('client.ui', self)
+        uic.loadUi('client (2).ui', self)
         self.client_socket = socket(AF_INET, SOCK_STREAM)
         self.client_socket.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
-        address = ('localhost', 50004)
+        address = ('localhost', 50002)
         self.client_socket.connect(address)
         # self.recevie_thread()
         self.pushButton_2.clicked.connect(self.ServerConnect)
@@ -55,11 +55,16 @@ class Mainwindow(QtWidgets.QMainWindow):
 
     # 채팅창 보내기
     def ServerConnect(self):
-        self.teacher_msg = self.chat_input.text()
+        self.teacher_msg = 'chat/'+self.chat_input.text()
         self.client_socket.send(self.teacher_msg.encode())
         print('send', self.teacher_msg)
-        self.textBrowser.append(self.teacher_msg)
+        self.textBrowser.append(self.chat_input.text())
         self.chat_input.clear()
+        # self.teacher_msg = self.chat_input.text()
+        # self.client_socket.send(self.teacher_msg.encode())
+        # print('send', self.teacher_msg)
+        # self.textBrowser.append(self.teacher_msg)
+        # self.chat_input.clear()
 
 # 서버에서 온 메세지
 class Server_message(QThread):

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>741</width>
-    <height>424</height>
+    <width>743</width>
+    <height>807</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,7 +23,7 @@
       <x>0</x>
       <y>0</y>
       <width>741</width>
-      <height>401</height>
+      <height>801</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -33,8 +33,8 @@
      <widget class="QLabel" name="label_7">
       <property name="geometry">
        <rect>
-        <x>240</x>
-        <y>20</y>
+        <x>230</x>
+        <y>50</y>
         <width>301</width>
         <height>51</height>
        </rect>
@@ -54,9 +54,9 @@
      <widget class="QWidget" name="formLayoutWidget">
       <property name="geometry">
        <rect>
-        <x>80</x>
-        <y>90</y>
-        <width>609</width>
+        <x>220</x>
+        <y>130</y>
+        <width>309</width>
         <height>302</height>
        </rect>
       </property>
@@ -76,29 +76,7 @@
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-image: url(/home/iot/바탕화면/학생.png);</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QPushButton" name="pushButton_6">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>300</width>
-           <height>300</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border-image: url(/home/iot/바탕화면/선생님.png);</string>
+          <string notr="true">border-image: url(/home/iot/문서/GitHub/EduApp/학생.png);</string>
          </property>
          <property name="text">
           <string/>
@@ -107,21 +85,22 @@
        </item>
       </layout>
      </widget>
-    </widget>
-    <widget class="QWidget" name="page_9">
-     <widget class="QLabel" name="label_8">
+     <widget class="QLabel" name="label_28">
       <property name="geometry">
        <rect>
-        <x>220</x>
-        <y>40</y>
+        <x>210</x>
+        <y>470</y>
         <width>331</width>
-        <height>81</height>
+        <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <pointsize>23</pointsize>
+        <pointsize>14</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	background-color:None ;</string>
       </property>
       <property name="text">
        <string>로그인</string>
@@ -130,110 +109,18 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QWidget" name="gridLayoutWidget_2">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>150</y>
-        <width>571</width>
-        <height>123</height>
-       </rect>
-      </property>
-      <layout class="QGridLayout" name="gridLayout_2">
-       <item row="0" column="1" colspan="2">
-        <widget class="QLineEdit" name="lineEdit"/>
-       </item>
-       <item row="2" column="1" colspan="2">
-        <widget class="QLineEdit" name="lineEdit_4"/>
-       </item>
-       <item row="0" column="0">
-        <widget class="QLabel" name="label_13">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>30</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>아이디</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1" colspan="2">
-        <widget class="QLabel" name="label_12">
-         <property name="text">
-          <string> </string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1" colspan="2">
-        <widget class="QLabel" name="label_11">
-         <property name="text">
-          <string> </string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label_14">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>30</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>비밀번호</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QPushButton" name="back_btn_1">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>31</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-image: url(/home/iot/바탕화면/back.png);</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QWidget" name="formLayoutWidget_2">
+     <widget class="QWidget" name="formLayoutWidget_3">
       <property name="geometry">
        <rect>
         <x>180</x>
-        <y>300</y>
+        <y>690</y>
         <width>409</width>
         <height>38</height>
        </rect>
       </property>
-      <layout class="QFormLayout" name="formLayout_2">
+      <layout class="QFormLayout" name="formLayout_3">
        <item row="0" column="0">
-        <widget class="QPushButton" name="pushButton_7">
+        <widget class="QPushButton" name="join_btn">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -252,7 +139,7 @@
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QPushButton" name="pushButton_8">
+        <widget class="QPushButton" name="login_btn">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -272,9 +159,193 @@
        </item>
       </layout>
      </widget>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>450</y>
+        <width>591</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">	background-color: rgb(246, 246, 246);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_29">
+       <property name="geometry">
+        <rect>
+         <x>81</x>
+         <y>70</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>account.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_32">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>110</y>
+         <width>50</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>lock.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="id_Input">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>70</y>
+         <width>400</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>400</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="accessibleDescription">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;아이디입력하시오오&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">	background-color:rgb(255,255,255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_31">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>100</y>
+         <width>401</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:red;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="pw_Input">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>120</y>
+         <width>400</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>400</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">	background-color:rgb(255,255,255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_33">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>170</y>
+         <width>401</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:red;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <zorder>frame</zorder>
+     <zorder>label_7</zorder>
+     <zorder>formLayoutWidget</zorder>
+     <zorder>label_28</zorder>
+     <zorder>formLayoutWidget_3</zorder>
     </widget>
     <widget class="QWidget" name="page_10">
-     <widget class="QPushButton" name="back_btn_3">
+     <widget class="QPushButton" name="back_btn_1">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -284,7 +355,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-image: url(/home/iot/바탕화면/back.png);</string>
+       <string notr="true">border-image: url(/home/iot/문서/GitHub/EduApp/back.png);</string>
       </property>
       <property name="text">
        <string/>
@@ -293,8 +364,8 @@
      <widget class="QLabel" name="label_15">
       <property name="geometry">
        <rect>
-        <x>220</x>
-        <y>20</y>
+        <x>210</x>
+        <y>190</y>
         <width>331</width>
         <height>61</height>
        </rect>
@@ -314,21 +385,21 @@
      <widget class="QWidget" name="gridLayoutWidget_3">
       <property name="geometry">
        <rect>
-        <x>120</x>
-        <y>100</y>
+        <x>110</x>
+        <y>270</y>
         <width>551</width>
         <height>231</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_3">
        <item row="4" column="1">
-        <widget class="QLineEdit" name="lineEdit_7"/>
+        <widget class="QLineEdit" name="join_name_input"/>
        </item>
        <item row="2" column="1" colspan="2">
-        <widget class="QLineEdit" name="lineEdit_6"/>
+        <widget class="QLineEdit" name="join_pw_input"/>
        </item>
        <item row="0" column="1" colspan="2">
-        <widget class="QLineEdit" name="lineEdit_5"/>
+        <widget class="QLineEdit" name="join_id_input"/>
        </item>
        <item row="1" column="1" colspan="2">
         <widget class="QLabel" name="label_17">
@@ -382,7 +453,7 @@
         </widget>
        </item>
        <item row="6" column="1">
-        <widget class="QLineEdit" name="lineEdit_8"/>
+        <widget class="QLineEdit" name="join_phone_input"/>
        </item>
        <item row="6" column="0">
         <widget class="QLabel" name="label_20">
@@ -396,11 +467,11 @@
        </item>
       </layout>
      </widget>
-     <widget class="QPushButton" name="pushButton_9">
+     <widget class="QPushButton" name="join_finish_btn">
       <property name="geometry">
        <rect>
-        <x>290</x>
-        <y>350</y>
+        <x>280</x>
+        <y>520</y>
         <width>200</width>
         <height>36</height>
        </rect>
@@ -438,7 +509,7 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-image: url(/home/iot/바탕화면/user1.png);</string>
+       <string notr="true">border-image: url(/home/iot/문서/GitHub/EduApp/user1.png);</string>
       </property>
       <property name="text">
        <string/>
@@ -450,7 +521,7 @@
         <x>20</x>
         <y>80</y>
         <width>701</width>
-        <height>321</height>
+        <height>711</height>
        </rect>
       </property>
       <property name="font">
@@ -486,7 +557,7 @@
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <property name="iconSize">
        <size>
@@ -525,7 +596,7 @@
           <x>20</x>
           <y>10</y>
           <width>631</width>
-          <height>301</height>
+          <height>691</height>
          </rect>
         </property>
         <property name="currentIndex">
@@ -538,7 +609,7 @@
             <x>30</x>
             <y>20</y>
             <width>561</width>
-            <height>261</height>
+            <height>641</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_5">
@@ -580,9 +651,9 @@
             <widget class="QLineEdit" name="lineEdit_12"/>
            </item>
            <item row="2" column="2">
-            <widget class="QPushButton" name="pushButton_2">
+            <widget class="QPushButton" name="Q_up_btn">
              <property name="text">
-              <string>PushButton</string>
+              <string>제출</string>
              </property>
             </widget>
            </item>
@@ -615,35 +686,20 @@
           <x>10</x>
           <y>0</y>
           <width>641</width>
-          <height>311</height>
+          <height>701</height>
          </rect>
         </property>
         <property name="currentIndex">
          <number>0</number>
         </property>
         <widget class="QWidget" name="page_8">
-         <widget class="QLineEdit" name="lineEdit_2">
+         <widget class="QTextBrowser" name="chat_Browser_1">
           <property name="geometry">
            <rect>
             <x>30</x>
-            <y>270</y>
-            <width>471</width>
-            <height>31</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">	background-color: white;
-	border: 2px solid rgb(189, 189, 189);
-	border-radius: 10px;</string>
-          </property>
-         </widget>
-         <widget class="QTextBrowser" name="textBrowser_2">
-          <property name="geometry">
-           <rect>
-            <x>30</x>
-            <y>20</y>
+            <y>30</y>
             <width>581</width>
-            <height>231</height>
+            <height>611</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -655,26 +711,41 @@
            <enum>QFrame::WinPanel</enum>
           </property>
          </widget>
-         <widget class="QPushButton" name="pushButton_3">
+         <widget class="QLineEdit" name="chat_line_1">
           <property name="geometry">
            <rect>
-            <x>520</x>
-            <y>270</y>
-            <width>91</width>
+            <x>30</x>
+            <y>660</y>
+            <width>471</width>
             <height>31</height>
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">	color: rgb(0, 0, 0);
-	background-color: white;
+           <string notr="true">	background-color: white;
 	border: 2px solid rgb(189, 189, 189);
 	border-radius: 10px;</string>
           </property>
-          <property name="text">
-           <string>전송</string>
-          </property>
          </widget>
         </widget>
+       </widget>
+       <widget class="QPushButton" name="push_chat_btn_1">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>660</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">	color: rgb(0, 0, 0);
+	background-color: white;
+	border: 2px solid rgb(189, 189, 189);
+	border-radius: 10px;</string>
+        </property>
+        <property name="text">
+         <string>전송</string>
+        </property>
        </widget>
       </widget>
       <widget class="QWidget" name="tab">
@@ -687,76 +758,170 @@
        <attribute name="title">
         <string>QnA</string>
        </attribute>
-       <widget class="QTableWidget" name="tableWidget">
+       <widget class="QStackedWidget" name="stackedWidget_6">
         <property name="geometry">
          <rect>
-          <x>70</x>
-          <y>10</y>
-          <width>511</width>
-          <height>241</height>
+          <x>10</x>
+          <y>0</y>
+          <width>651</width>
+          <height>701</height>
          </rect>
         </property>
-        <property name="styleSheet">
-         <string notr="true">	color: rgb(0, 0, 0);
-	background-color: white;
-	border: 2px solid rgb(189, 189, 189);
-</string>
+        <property name="currentIndex">
+         <number>1</number>
         </property>
-        <column>
-         <property name="text">
-          <string>제목</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>ID</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>질문내용</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>답변여부</string>
-         </property>
-        </column>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit_11">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>270</y>
-          <width>421</width>
-          <height>29</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">	color: rgb(0, 0, 0);
-	background-color: white;
-	border: 2px solid rgb(189, 189, 189);
-</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_4">
-        <property name="geometry">
-         <rect>
-          <x>500</x>
-          <y>270</y>
-          <width>81</width>
-          <height>30</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">	color: rgb(0, 0, 0);
-	background-color: white;
-	border: 2px solid rgb(189, 189, 189);
-</string>
-        </property>
-        <property name="text">
-         <string>답변</string>
-        </property>
+        <widget class="QWidget" name="page_3">
+         <widget class="QWidget" name="gridLayoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>641</width>
+            <height>641</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="1" column="0" colspan="2">
+            <widget class="QTreeWidget" name="treeWidget">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(0,0,0);
+background-color: white;
+border: 1px solid rgb(189, 189, 189);</string>
+             </property>
+             <column>
+              <property name="text">
+               <string>번호</string>
+              </property>
+              <property name="font">
+               <font>
+                <strikeout>false</strikeout>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>내용</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>등록자</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>등록일자</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>답변여부</string>
+              </property>
+             </column>
+             <item>
+              <property name="text">
+               <string>ㄴㅇㄹㄴ</string>
+              </property>
+              <property name="text">
+               <string>ㄴㄴㅇㄹㄴㅇㄹ</string>
+              </property>
+              <property name="text">
+               <string>ㄴㅇㄹㄴㅇㄹ</string>
+              </property>
+              <property name="text">
+               <string>ㄴㄴㅇㄹㄴㅇㄹ</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>sdfsdffffffffffffffffffffffffffffffffffffffffffffffffffffffff</string>
+               </property>
+              </item>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>660</y>
+            <width>639</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">	background-color: white;
+	border: 2px solid rgb(189, 189, 189);</string>
+          </property>
+          <property name="text">
+           <string>답변하기</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_4">
+         <widget class="QWidget" name="gridLayoutWidget_8">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>641</width>
+            <height>341</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>작성자:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>제목:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>ddddddddddd</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>ddddd</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="4">
+            <widget class="QTextBrowser" name="textBrowser_3">
+             <property name="styleSheet">
+              <string notr="true">	background-color: white;
+	border: 2px solid rgb(189, 189, 189);</string>
+             </property>
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
        </widget>
       </widget>
       <widget class="QWidget" name="tab_3">
@@ -766,8 +931,8 @@
        <widget class="QWidget" name="gridLayoutWidget_5">
         <property name="geometry">
          <rect>
-          <x>70</x>
-          <y>60</y>
+          <x>60</x>
+          <y>70</y>
           <width>521</width>
           <height>221</height>
          </rect>
@@ -804,7 +969,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-image: url(/home/iot/바탕화면/back.png);</string>
+       <string notr="true">border-image: url(/home/iot/문서/GitHub/EduApp/back.png);</string>
       </property>
       <property name="text">
        <string/>
@@ -854,7 +1019,7 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QPushButton" name="back_btn_4">
+     <widget class="QPushButton" name="back_btn_3">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -864,7 +1029,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-image: url(/home/iot/바탕화면/back.png);</string>
+       <string notr="true">border-image: url(/home/iot/문서/GitHub/EduApp/back.png);</string>
       </property>
       <property name="text">
        <string/>
@@ -885,7 +1050,7 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-image: url(/home/iot/바탕화면/user1.png);</string>
+       <string notr="true">border-image: url(/home/iot/문서/GitHub/EduApp/user1.png);</string>
       </property>
       <property name="text">
        <string/>
@@ -979,7 +1144,7 @@
          <number>0</number>
         </property>
         <widget class="QWidget" name="page_12">
-         <widget class="QCommandLinkButton" name="commandLinkButton_2">
+         <widget class="QCommandLinkButton" name="study_start_btn">
           <property name="geometry">
            <rect>
             <x>400</x>
@@ -989,7 +1154,7 @@
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: None;</string>
+           <string notr="true">background-color: rgb(246, 246, 246);</string>
           </property>
           <property name="text">
            <string>학습시작하기</string>
@@ -998,8 +1163,8 @@
          <widget class="QLabel" name="label_23">
           <property name="geometry">
            <rect>
-            <x>360</x>
-            <y>70</y>
+            <x>350</x>
+            <y>60</y>
             <width>301</width>
             <height>81</height>
            </rect>
@@ -1009,7 +1174,7 @@
 background-color: None;</string>
           </property>
           <property name="text">
-           <string>주택도시보증공사 용어 학습</string>
+           <string>학습어찌고</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -1066,7 +1231,7 @@ background-color: None;</string>
           </property>
           <layout class="QGridLayout" name="gridLayout_4">
            <item row="1" column="0" colspan="2">
-            <widget class="QTextBrowser" name="textBrowser_4">
+            <widget class="QTextBrowser" name="Q_Browser">
              <property name="styleSheet">
               <string notr="true">	background-color: white;
 	border: 2px solid rgb(189, 189, 189);
@@ -1078,7 +1243,7 @@ background-color: None;</string>
             </widget>
            </item>
            <item row="2" column="1">
-            <widget class="QPushButton" name="pushButton_12">
+            <widget class="QPushButton" name="Q_btn">
              <property name="styleSheet">
               <string notr="true">	color: rgb(0, 0, 0);
 	background-color: white;
@@ -1091,7 +1256,7 @@ background-color: None;</string>
             </widget>
            </item>
            <item row="2" column="0">
-            <widget class="QLineEdit" name="lineEdit_9">
+            <widget class="QLineEdit" name="Q_line">
              <property name="styleSheet">
               <string notr="true">	background-color: white;
 	border: 2px solid rgb(189, 189, 189);
@@ -1142,7 +1307,7 @@ background-color: None;</string>
          <number>0</number>
         </property>
         <widget class="QWidget" name="page_14">
-         <widget class="QPushButton" name="pushButton_13">
+         <widget class="QPushButton" name="chat_Conn_btn">
           <property name="geometry">
            <rect>
             <x>410</x>
@@ -1182,7 +1347,7 @@ background-color: None;</string>
          </widget>
         </widget>
         <widget class="QWidget" name="page_15">
-         <widget class="QLineEdit" name="lineEdit_10">
+         <widget class="QLineEdit" name="chat_line">
           <property name="geometry">
            <rect>
             <x>10</x>
@@ -1197,7 +1362,7 @@ background-color: None;</string>
 	border-radius: 10px;</string>
           </property>
          </widget>
-         <widget class="QTextBrowser" name="textBrowser_5">
+         <widget class="QTextBrowser" name="chat_Browser">
           <property name="geometry">
            <rect>
             <x>10</x>
@@ -1215,7 +1380,7 @@ background-color: None;</string>
            <enum>QFrame::WinPanel</enum>
           </property>
          </widget>
-         <widget class="QPushButton" name="pushButton_14">
+         <widget class="QPushButton" name="push_chat_btn">
           <property name="geometry">
            <rect>
             <x>500</x>
@@ -1247,18 +1412,84 @@ background-color: None;</string>
        <attribute name="title">
         <string>QnA</string>
        </attribute>
-       <widget class="QPushButton" name="pushButton_15">
+       <widget class="QWidget" name="gridLayoutWidget_7">
         <property name="geometry">
          <rect>
-          <x>260</x>
-          <y>110</y>
-          <width>181</width>
-          <height>61</height>
+          <x>10</x>
+          <y>10</y>
+          <width>631</width>
+          <height>291</height>
          </rect>
         </property>
-        <property name="text">
-         <string>QnA 올리기</string>
-        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <widget class="QTreeWidget" name="treeWidget_2">
+           <column>
+            <property name="text">
+             <string>번호</string>
+            </property>
+            <property name="font">
+             <font>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>내용</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>등록자</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>등록일자</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </column>
+           <item>
+            <property name="text">
+             <string>1</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignLeading|AlignVCenter</set>
+            </property>
+            <property name="text">
+             <string>dfdfsssssssssssssssssss</string>
+            </property>
+            <property name="text">
+             <string>dfdf</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+            <property name="text">
+             <string>sdfs</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+            <property name="flags">
+             <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsEnabled|ItemIsTristate</set>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </widget>
      </widget>
